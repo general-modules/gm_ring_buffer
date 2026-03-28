@@ -18,7 +18,7 @@
 #include "gm_ring_buffer.h"
 
 // 环形缓冲区对象
-struct _gm_ring_buffer
+struct _gm_ring_buffer_t
 {
     uint8_t *buffer;       // 指向缓冲区的指针
     size_t head;           // 头指针(指向头元素)

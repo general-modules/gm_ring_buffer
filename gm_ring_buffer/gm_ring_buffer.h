@@ -23,13 +23,13 @@ extern "C"
 
 #define GM_RING_BUFFER_VERSION_MAJOR 1
 #define GM_RING_BUFFER_VERSION_MINOR 0
-#define GM_RING_BUFFER_VERSION_PATCH 0
+#define GM_RING_BUFFER_VERSION_PATCH 1
 
 // 内部需要预留一个字节（间隔元素），用于区分缓冲区空/满
 #define RING_BUFFER_MAX_SIZE (SIZE_MAX - 1)
 
 // 环形缓冲区对象
-typedef struct _gm_ring_buffer gm_ring_buffer_t;
+typedef struct _gm_ring_buffer_t gm_ring_buffer_t;
 
 /**
  * @brief 创建环形缓冲区对象
